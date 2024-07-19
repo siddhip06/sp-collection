@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css.css"> 
+  <script>
+        // Script which takes the login page to the index.html page on click of the button.
+         function indexfile() {
+            window.location.href = 'index.html';
+        }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h1>Login</h1>
+      <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br><br>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <br>
+            <br>
+            <button type="submit" onclick="indexfile()">Login</button>
+            <br>
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
